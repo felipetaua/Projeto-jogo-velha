@@ -18,6 +18,16 @@
     padding: 40px;  /*espaçamento interno*/
     border-radius: 15px;
     background-color: rgba(36, 33, 33, 0.473);
+    animation: animar alternate infinite;
+    animation-duration: 2.5s;
+}
+
+@keyframes animar {
+    0%{ box-shadow: 2px 2px 20px 09093B;}/*lado | baixo | espanssão/suavidade*/
+    25%{ box-shadow: 2px 2px 20px #1A1A58;}
+    50%{box-shadow: 2px 2px 20px #545493;}
+    75%{box-shadow: 2px 2px 20px #7E7EB1;}
+    100%{box-shadow: 2px 2px 20px #afafd8;}
 }
 
 .jogo{
