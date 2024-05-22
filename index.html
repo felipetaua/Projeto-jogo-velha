@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awaesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div class="painel">
+        <table class="jogo" border="2">
+            <tr><!--linha1--->
+                <td id="q7" class="quadrado" onclick="jogar(this)"></td>
+                <td id="q8" class="quadrado" onclick="jogar(this)"></td>
+                <td id="q9" class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+            <tr><!--linha2--->
+                <td id="q4" class="quadrado" onclick="jogar(this)"></td>
+                <td id="q5" class="quadrado" onclick="jogar(this)"></td>
+                <td id="q6" class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+            <tr><!--linha3--->
+                <td id="q1" class="quadrado" onclick="jogar(this)"></td>
+                <td id="q2" class="quadrado" onclick="jogar(this)"></td>
+                <td id="q3" class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+        </table>
+
+        <button onclick="reiniciar()" class="botao"><i class="fa-solid fa-rotate-right"></i> Reiniciar</button>
+        <button onclick="window.close()" class="botao"><i class="fa-regular fa-circle-xmark"></i> Fechar</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
